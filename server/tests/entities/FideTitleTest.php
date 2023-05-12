@@ -13,8 +13,19 @@ class FideTitleTest extends TestCase {
     $this->sut = new FideTitle();
   }
 
-  public function testShouldReturnExceptionIfNoNumberIsProvided(): void {
-    $this->expectException(new InvalidArgumentException());
+  public function testShouldReturnExceptionIfLessOf0NumberIsProvided(): void {
+    $this->expectException(InvalidArgumentException::class);
+    $this->sut->setId(-1);
+  }
+
+  public function testShouldReturnExceptionIfNumberEqualTo0IsProvided(): void {
+    $this->expectException(InvalidArgumentException::class);
     $this->sut->setId(0);
+  }
+
+  public function testShouldInsertTheNumberHigherThan0(): void {
+    $this->sut->setId(1);
+    $result = $this->sut->getId();
+    $this->assertEquals(1, $result);
   }
 }
