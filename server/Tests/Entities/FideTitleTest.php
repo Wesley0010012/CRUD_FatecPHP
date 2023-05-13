@@ -32,7 +32,7 @@ class FideTitleTest extends TestCase {
     $this->sut = new FideTitle($enumValidator, $idValidator);
   }
 
-  public function testShouldReturnExceptionIfInvalidNumberIsProvided(): void {
+  public function testExampleShouldReturnExceptionIfInvalidNumberIsProvided(): void {
     $this->expectException(InvalidArgumentException::class);
     $this->sut->setId(-1);
   }
