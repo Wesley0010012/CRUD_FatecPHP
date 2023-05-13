@@ -5,8 +5,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Src\\": "src/",
-            "Tests\\": "tests/"
+            "Src\\": "Src/",
+            "Tests\\": "Tests/"
         }
     },
     "authors": [
