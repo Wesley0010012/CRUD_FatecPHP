@@ -4,6 +4,6 @@ namespace Src\Domain\Protocols;
 
 use Src\Domain\Enums\FideTitleEnum;
 
-interface EnumValidatorProtocol {
+interface FideTitleEnumValidatorProtocol {
   public function isValid(FideTitleEnum $enum): bool;
 }

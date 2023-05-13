@@ -3,9 +3,9 @@
 namespace Tests\Stubs\EnumValidatorStubs;
 
 use Src\Domain\Enums\FideTitleEnum;
-use Src\Domain\Protocols\EnumValidatorProtocol;
+use Src\Domain\Protocols\FideTitleEnumValidatorProtocol;
 
-class EnumValidatorStub implements EnumValidatorProtocol {
+class EnumValidatorStub implements FideTitleEnumValidatorProtocol {
   public function isValid(FideTitleEnum $enum): bool {
     return true;
   }
