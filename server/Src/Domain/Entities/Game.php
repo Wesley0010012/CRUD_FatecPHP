@@ -39,6 +39,17 @@ class Game {
   }
 
   public function setGamePlace(string $gamePlace): void {
+    if($this->stringValidator->isValid($gamePlace))
+      throw new InvalidArgumentException("Invalid Game Place");
 
+    $this->gamePlace = $gamePlace;
+  }
+
+  public function getPgn(): string {
+    return $this->pgn;
+  }
+
+  public function setPgn(string $pgn): void {
+    $this->pgn = $pgn;
   }
 }
