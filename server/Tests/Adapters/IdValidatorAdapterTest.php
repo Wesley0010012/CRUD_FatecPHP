@@ -4,7 +4,7 @@ namespace Tests\Adapters;
 
 use PHPUnit\Framework\TestCase;
 use Src\Domain\Protocols\IdValidatorProtocol;
-use Src\Infra\Validators\IdValidatorAdapter;
+use Src\UseCases\Validators\IdValidatorAdapter;
 
 class IdValidatorAdapterTest extends TestCase {
   private readonly IdValidatorProtocol $sut;

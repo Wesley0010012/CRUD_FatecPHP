@@ -61,6 +61,6 @@ class PlayerTest extends TestCase {
 
   public function testExampleShouldReturnExceptionIfInvalidPlayedMatchesWasProvided(): void {
     $this->expectException(InvalidArgumentException::class);
-    $this->sut->setPlayedMatches(-1);
+    $this->sut->setPlayedGames(-1);
   }
 }

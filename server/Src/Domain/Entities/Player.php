@@ -23,8 +23,7 @@ class Player {
   private float $fideRating;
   private int $wins;
   private int $loses;
-  private int $playedMatches;
-  public Matches $matches;
+  private int $playedGames;
 
   public function __construct(IdValidatorProtocol $idValidator, StringValidatorProtocol $stringValidator, FideTitleEnumValidatorProtocol $enumValidator, FideRatingValidatorProtocol $fideRatingValidator, GenericNumberValidatorProtocol $genericNumberValidator) {
     $this->idValidator = $idValidator;
@@ -102,14 +101,14 @@ class Player {
     $this->loses = $loses;
   }
 
-  public function getPlayedMatches(): int {
-    return $this->playedMatches;
+  public function getPlayedGames(): int {
+    return $this->playedGames;
   }
 
-  public function setPlayedMatches(int $matches): void {
+  public function setPlayedGames(int $matches): void {
     if(!$this->genericNumberValidator->isValid($matches))
       throw new InvalidArgumentException("invalid Loses number");
 
-    $this->playedMatches = $matches;
+    $this->playedGames = $matches;
   }
 }

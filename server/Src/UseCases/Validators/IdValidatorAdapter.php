@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Infra\Validators;
+namespace Src\UseCases\Validators;
 
 use Src\Domain\Protocols\IdValidatorProtocol;
 

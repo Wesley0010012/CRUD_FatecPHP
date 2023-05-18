@@ -5,7 +5,7 @@ namespace Tests\Adapters;
 use PHPUnit\Framework\TestCase;
 use Src\Domain\Enums\FideTitleEnum;
 use Src\Domain\Protocols\FideTitleEnumValidatorProtocol;
-use Src\Infra\Validators\FideTitleEnumValidatorAdapter;
+use Src\UseCases\Validators\FideTitleEnumValidatorAdapter;
 
 class FideTitleEnumValidatorAdapterTest extends TestCase {
   private readonly FideTitleEnumValidatorProtocol $sut;

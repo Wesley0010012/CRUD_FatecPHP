@@ -2,7 +2,6 @@
 
 namespace Src\Domain\Entities;
 
-
 use InvalidArgumentException;
 use Src\Domain\Enums\FideTitleEnum;
 use Src\Domain\Protocols\FideTitleEnumValidatorProtocol;
@@ -11,6 +10,7 @@ use Src\Domain\Protocols\IdValidatorProtocol;
 class FideTitle {
   private int $id;
   private FideTitleEnum $title;
+
   private readonly FideTitleEnumValidatorProtocol $enumValidator;
   private readonly IdValidatorProtocol $idValidator;
 
