@@ -19,10 +19,12 @@ class Game {
   private readonly IdValidatorProtocol $idValidator;
   private readonly StringValidatorProtocol $stringValidator;
 
-  public function __construct(GenericNumberValidatorProtocol $numberValidator, IdValidatorProtocol $idValidator, StringValidatorProtocol $stringValidator) {
+  public function __construct(GenericNumberValidatorProtocol $numberValidator, IdValidatorProtocol $idValidator, StringValidatorProtocol $stringValidator, Player $p1, Player $p2) {
     $this->numberValidator = $numberValidator;
     $this->idValidator = $idValidator;
     $this->stringValidator = $stringValidator;
+    $this->p1 = $p1;
+    $this->p2 = $p2;
   }
 
   public function getId(): int {

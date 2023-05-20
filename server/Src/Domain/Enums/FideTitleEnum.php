@@ -7,4 +7,5 @@ enum FideTitleEnum {
   case FM;
   case IM;
   case GM;
+  case NP;
 }
