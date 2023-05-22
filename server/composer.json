@@ -6,6 +6,7 @@
     "autoload": {
         "psr-4": {
             "Src\\": "Src/",
+            "Public\\": "public_html/",
             "Tests\\": "Tests/"
         }
     },
@@ -14,5 +15,7 @@
             "name": "Wesley Laurindo"
         }
     ],
-    "require": {}
+    "require": {
+        "coffeecode/router": "^2.0"
+    }
 }

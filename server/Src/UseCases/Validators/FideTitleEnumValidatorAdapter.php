@@ -6,7 +6,7 @@ use Src\Domain\Enums\FideTitleEnum;
 use Src\Domain\Protocols\FideTitleEnumValidatorProtocol;
 
 class FideTitleEnumValidatorAdapter implements FideTitleEnumValidatorProtocol {
-  private $instance = NULL;
+  private static $instance = NULL;
 
   public function isValid(FideTitleEnum $title): bool {
     if($title instanceof FideTitleEnum)

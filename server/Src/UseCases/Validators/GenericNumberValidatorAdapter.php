@@ -5,7 +5,7 @@ namespace Src\UseCases\Validators;
 use Src\Domain\Protocols\GenericNumberValidatorProtocol;
 
 class GenericNumberValidatorAdapter implements GenericNumberValidatorProtocol {
-  private $instance = NULL;
+  private static $instance = NULL;
   
   public function isValid(int $num): bool {
     if($num < 0)

@@ -5,7 +5,7 @@ namespace Src\UseCases\Validators;
 use Src\Domain\Protocols\IdValidatorProtocol;
 
 class IdValidatorAdapter implements IdValidatorProtocol {
-  private $instance = NULL;
+  private static $instance = NULL;
   
   public function isValid(int $id): bool {
     if($id <= 0)

@@ -15,8 +15,8 @@ class FideTitle {
   private readonly IdValidatorProtocol $idValidator;
 
   public function __construct(FideTitleEnumValidatorProtocol $enumValidator, IdValidatorProtocol $idValidator) {
-    $this->enumValidator = new $enumValidator;
-    $this->idValidator = new $idValidator;
+    $this->enumValidator = $enumValidator;
+    $this->idValidator = $idValidator;
   }
 
   public function getId(): int {

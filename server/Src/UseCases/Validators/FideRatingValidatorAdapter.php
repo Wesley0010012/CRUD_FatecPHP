@@ -5,7 +5,7 @@ namespace Src\UseCases\Validators;
 use Src\Domain\Protocols\FideRatingValidatorProtocol;
 
 class FideRatingValidatorAdapter implements FideRatingValidatorProtocol {
-  private $instance = NULL;
+  private static $instance = NULL;
 
   public function isValid(float $rating): bool {
     if($rating <= 0)

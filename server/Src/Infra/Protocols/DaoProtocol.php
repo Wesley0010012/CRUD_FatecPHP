@@ -5,7 +5,7 @@ namespace Src\Infra\Protocols;
 use ArrayObject;
 
 interface DaoProtocol {
-  public function getById(int $id): Object;
-  public function getAll(): ArrayObject;
-  public function getAllOrdered(): ArrayObject;
+  public static function getById(int $id): object;
+  public static function getAll(): ArrayObject;
+  public static function getAllOrdered(): ArrayObject;
 }

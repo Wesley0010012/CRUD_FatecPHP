@@ -24,6 +24,7 @@ class Player {
   private int $wins;
   private int $loses;
   private int $playedGames;
+  public Country $country;
 
   public function __construct(IdValidatorProtocol $idValidator, StringValidatorProtocol $stringValidator, FideTitleEnumValidatorProtocol $enumValidator, FideRatingValidatorProtocol $fideRatingValidator, GenericNumberValidatorProtocol $genericNumberValidator) {
     $this->idValidator = $idValidator;

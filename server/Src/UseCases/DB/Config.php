@@ -4,7 +4,7 @@ namespace Src\UseCases\DB;
 
 class Config {
   private const db_host = "localhost";
-  private const db_name = "fatec_project";
+  private const db_name = "deploy_fatec_project";
   private const db_user = "root";
   private const db_pass = "12345678";
 
